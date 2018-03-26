@@ -35,7 +35,7 @@ def txtToXml(image_path, txt_path):
             column = line.split(',')
             node_object = SubElement(node_root, 'object')
             node_name = SubElement(node_object, 'name')
-            node_name.text = 'text'    #做的是第二个项目，所以就把文本统一成了text
+            node_name.text = 'name'    
             node_difficult = SubElement(node_object, 'difficult')
             node_difficult.text = '0'
             node_bndbox = SubElement(node_object, 'bndbox')
