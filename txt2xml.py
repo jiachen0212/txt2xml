@@ -35,7 +35,7 @@ def txtToXml(image_path, txt_path):
             column = line.split(',')
             node_object = SubElement(node_root, 'object')
             node_name = SubElement(node_object, 'name')
-            node_name.text = 'ship'   #这里根据代码运行情况或许需要微调... 我是写成了ship,然后源码对应的convert_2_tfrecord处的pascal需要改成ship...
+            node_name.text = 'ship' #这里根据代码运行情况或许需要微调... 我是写成了ship,然后源码对应的convert_2_tfrecord处的pascal也需要改成ship...
             node_difficult = SubElement(node_object, 'difficult')
             node_difficult.text = '0'
             node_bndbox = SubElement(node_object, 'bndbox')
